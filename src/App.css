@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f0efef;
+}
+
+.maincontainer{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.container{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #f0efef;
+  }
+
+/*************************
+            MESSAGE
+  ************************/
+
+  .conversation{
+      position: relative;
+      max-width: 65%;
+      display: flex;
+      border-radius: 5px;
+  }
+
+.sender{
+    margin-left: auto;
+    right: 10px;
+    background-color: #0085b1;
+    color: white;
+}
+
+.receiver{
+    left: 10px;
+    background-color: #d8d8d8;
+    color:#727272;
+}
+
+
+  .receiver:before, .receiver:after{
+        content: "";
+        position: absolute;
+        z-index: 1000;
+        bottom: -20px;
+        left: 8%;
+        margin-left: -8px;
+        border-top: 25px solid #d8d8d8;
+        border-left: 0px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 0; 
+  }
+
+
+  .sender:before, .sender:after{
+    content: "";
+    position: absolute;
+    z-index: 1000;
+    bottom: -20px;
+    right:8%;
+    margin-right: -8px;
+    border-top: 25px solid #0085b1;
+    border-left: 20px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0; 
+}
+
+
+.hour{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #727272;
+}
+
+
+
+.write{
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* *********************
+        CHAT
+************************/
+
+.messageForm{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    background-color: #d3d2d2;
+}
+
+.text{
+      width: 65%;
+      height: 40px;
+      margin-right: 10px;
+      margin-top: 6px;
+      padding-right: 50px;
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      box-sizing: border-box;
+      border-radius: 45px;
+      border: 2px solid #d3d2d2;
+  }
+
+  .arrows{
+      position: absolute;
+      width: 30px;
+      top: 11px;
+      right: 18px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px #0085b1 solid;
+      /* background-image: url("./arrows.svg");
+      background-size: cover; */
+  }
+
+  .fa{
+      font-size: 27px;
+  }
